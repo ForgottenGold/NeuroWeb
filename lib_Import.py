@@ -1,9 +1,6 @@
 print("Импорт библиотек...")
-import warnings
-warnings.filterwarnings('always');
-import matplotlib
-matplotlib.use("Agg")
 
+import matplotlib; matplotlib.use("Agg")
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
@@ -14,7 +11,7 @@ import cv2
 import os
 
 from keras.optimizer_v2.gradient_descent import SGD
-#from keras.optimizer_v2 import Adam
+from keras.optimizer_v2.adam import Adam
 from keras.losses import MeanSquaredError
 from keras.models import Sequential
 from keras.layers import Input
